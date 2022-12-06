@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo</title>
+  </head>
+  <body>
+    <h1>¿alcohol o gasolina?</h1>
+
+    <script>
+      function saltolinea() {
+        document.write("<br><br><br>");
+      }
+
+      let combustible = 40;
+      let distancia = 480;
+
+      document.write(
+        "Si un carro tiene un tanque de 40 litros. Usando gasolina y consumiendo" +
+        "todo el tanque se hace un recorrido de 480 kilómetros. ¿Cuál es la" +
+        "eficiencia del carro usando gasolina? o sea, ¿cuántos kilómetros recorre" +
+        "el carro por cada litro de gasolina?"
+      );
+
+      saltolinea();
+
+      document.write(
+        "El rendimiento de la gasolina es: " + distancia / combustible
+      );
+
+      saltolinea();
+
+      document.write(
+        "Por otro lado, si el carro usa alcohol como combustible, el mismo tanque" +
+        "de 40 litros hace un recorrido de 300 kilómetros. ¿Cuál es el la" +
+        "eficiencia del carro usando alcohol?"
+      );
+
+      saltolinea();
+
+      distancia = 300;
+
+      document.write(
+        "El rendimiento del alcohol es: " + distancia / combustible
+      );
+      saltolinea();
+
+      //otro ejemplo con funciones
+      function saludo(frase) {
+        document.write(frase);
+      }
+
+      saludo("Hola, esto es un saludo para ti :)");
+
+      saltolinea();
+
+      function edad(hermano = 30, yo = 23) {
+        document.write(
+          "La edad de mi hermano es: " + hermano + " y la mia es: " + yo
+        );
+        saltolinea();
+        document.write("<h1>La diferencia de edad es: <h1>" + (hermano - yo)); //etiqueta html para mostrar una salida de texto en javascript
+      }
+      edad(); //llamado de la funcion de arriba para imprimirse
+    </script>
+  </body>
+</html>

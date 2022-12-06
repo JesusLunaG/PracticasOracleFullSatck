@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo de IMC</title>
+  </head>
+  <body>
+    <script>
+      
+
+      function salto() {
+        document.write("<br><br><br>");
+      }
+
+      function imprimir(frase) {
+        document.write(frase);
+        salto();
+      }
+
+      peso = parseInt(prompt("Ingrese su peso: "));
+      altura = parseFloat(prompt("Ingrese su Altura: "));
+
+      function IMC() {
+        let imc;
+        imc = peso / (altura * altura);
+        return imc;
+      }
+      
+      //CORREGIR "UNDEFINED" DE IMC
+
+      imprimir(" Tu IMC es: " + imc);
+
+      if (imc < 18.5) {
+        imprimir("Insuficiencia ponderal");
+      }
+      if (imc >= 18.5 && imc <= 24.9) {
+        imprimir("Intervalo normal");
+      }
+      if (imc > 25) {
+        imprimir("Sobrepeso");
+      }
+      if (imc > 30) {
+        imprimir("Obesidad");
+      }
+    </script>
+  </body>
+</html>
