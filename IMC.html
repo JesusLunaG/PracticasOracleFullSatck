@@ -8,8 +8,6 @@
   </head>
   <body>
     <script>
-      
-
       function salto() {
         document.write("<br><br><br>");
       }
@@ -19,16 +17,13 @@
         salto();
       }
 
-      peso = parseInt(prompt("Ingrese su peso: "));
-      altura = parseFloat(prompt("Ingrese su Altura: "));
-
       function IMC() {
-        let imc;
         imc = peso / (altura * altura);
         return imc;
       }
-      
-      //CORREGIR "UNDEFINED" DE IMC
+      peso = parseFloat(prompt("Ingrese su peso: "));
+      altura = parseFloat(prompt("Ingrese su Altura: "));
+      IMC();
 
       imprimir(" Tu IMC es: " + imc);
 
@@ -44,6 +39,8 @@
       if (imc > 30) {
         imprimir("Obesidad");
       }
+
+      //Programa corregido :D
     </script>
   </body>
 </html>
